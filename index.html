@@ -10,25 +10,89 @@
             font-family: Arial, Helvetica, sans-serif;
             margin:0;
             padding:0;
+            box-sizing: border-box;
         }
         header {
-            
+            background-color: white;
+            height: 100%;
+            padding: 20px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .banner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            }
+        .logo {
+            font-weight: bold;
             font-size: 32px;
             color :#4E47FF;
-            text-align: ;
         }
-        button {
+        .signup-btn {
             background-color: #4E47FF;
-            color :#ffff;
-            padding:16px;
-            
+            color :white;
+            padding:10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight:bold;
+            font-size: 25%;
         }
+
         .title {
-            
+            text-align: center;
+            margin-top: 10%;
 
         }
+        .title h1 {
+            font-size: 36px;
+            font-weight: 800%;
+            color :#111;
+        }
+        .stay-focused-btn {
+            margin-top: 20px;
+            display: inline-block;
+            background-color: #4E47FF;
+            color: white;
+            padding:12px 24px;
+            border-radius: 9px;
+            font-weight: bold;
+        }
+        .stats-section {
+  background-color: #e6e6ff; /* Light indigo background */
+  padding: 40px 20px;
+  border-radius: 16px;
+  margin: 40px auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.stats-section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stat-box h3 {
+  font-size: 32px;
+  color: #4f46e5; /* Indigo */
+  margin-bottom: 5px;
+}
+
+.stat-box p {
+  color: #666;
+  font-size: 14px;
+}
+
 
 
     </style> 
@@ -36,20 +100,21 @@
 <body>
     <header> 
             <div class="banner">
-                  <h3>LOGO</h1>
-               <button>Sign Up</button>
+                 <div class="logo">LOGO</div>
+               <button class="signup-btn">Sign Up</button>
             </div>
              
             <div class="title">
                 <h2>Cool Dark UI Template for<br> Webflow Agencies!</h2>
-                <button>Stay Focused</button>
+                <button class="stay-focused-btn"> Focused</button>
             </div>
                    
     </header>
     <main>
         <section class="action">
-            <div class="action">
+          
                 <h3>See It In Action</h3>
+                
                 <p>Explore the live preview and imagine your brand in this bold new look.</p>
                 <button class="live">Launch Live Preview</button>
             </div>
@@ -59,9 +124,19 @@
             <h4>Joined Thousands of Procuctive Users</h4>
             <p></p>
         </section>
-       
-
+      
+        <section class="stats-section">
+            <h2>Joined Thousands of Productive Users</h3>
+            <div class="stats-container">
+                <div class="stat-box"> <h3>50K<h3>
+                     <p>Active Users</p>        </div>
+                       <div class="stat-box"> <h3>2M+</h3>
+                         <p>Focus Sessions</p>   </div> <div class="stat-box"> <h3>95%</h3>  <p>Satisfaction Rate</p> </div>
+                          </div>
+            
         </section>
+
+      
 
     </main>
 </body>
