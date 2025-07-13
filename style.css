@@ -9,9 +9,10 @@ body {
  background-color: rgba(255, 255, 255, 0.85);
  color:#111;
  
-}
+}      
+      /* Navber Section */
 header { 
-    background-image: url('/Assets/Hero-bg.png'); 
+    background-image: url('./Assets/Hero-bg.png'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -20,11 +21,7 @@ header {
      display: flex;
     flex-direction: column;
     justify-content: space-between;
- 
- 
 }
-
-
  .navbar { 
     display: flex;
     justify-content: space-between;
@@ -79,7 +76,6 @@ header {
 /* Action Section */
 .action {
   display: flex;
- 
   justify-content: space-between;
   align-items: center;
   padding: 60px 40px;
@@ -129,17 +125,15 @@ header {
   height: auto;
   border-radius: 10px;
 }
-/* ✅ Productive Users Section */
+/* Productive Section */
 .productive-users {
-  background-color: #efe6e6; /* light gray */
+  background-color: #efe6e6; 
   color: #333;
   text-align: center;
   padding: 60px 20px;
   margin: 20px;
   
 }
-
-
 .stats-container{
      display: flex;
   justify-content: center;
@@ -212,10 +206,9 @@ header {
   color: #888;
   margin: 2px 0 0;
 }
-
 /* Contact Section */
 .signup-section{
-      display: flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 60px 40px;
@@ -223,9 +216,7 @@ header {
   color: #333;
 
 }
-.signup-section{
 
-}
 .contact-title{
      flex: 1;
   min-width: 250px;
@@ -235,7 +226,8 @@ header {
 
 }
 .contact-title, h2 {
-  font-size: 32px;}
+  font-size: 32px;
+}
 
 .contact{
      flex: 1;
@@ -308,7 +300,6 @@ header {
 }
 
 .footer-links a {
-  color: #ff6600;
   text-decoration: none;
   font-weight: 500;
 }
