@@ -6,25 +6,28 @@
 
 body {
   font-family: Arial, sans-serif;
- 
+ background-color: rgba(255, 255, 255, 0.85);
+ color:#111;
  
 }
-header {
-    background-image: url('/Assets/Hero-bg.png');
-     background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-   background-color: rgba(255, 255, 255, 0.85);
-  height: 100%;
-  padding: 20px 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+header { 
+    background-image: url('/Assets/Hero-bg.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    padding: 30px 60px;
+     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+ 
 }
 
-/* ✅ Navbar */
-.navbar {
-  
+
+ .navbar { 
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
@@ -41,7 +44,14 @@ header {
   border-radius: 8px;
   font-weight: bold;
   font-size: 14px;
+  transition: all 0.3s ease;
+  transform: scale(1);
 }
+.signup-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
 .banner{
   text-align: center;
   margin-top: 10%;  
@@ -61,17 +71,23 @@ header {
   text-decoration: none;
   font-weight: bold;
 }
+.focus-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
 /* Action Section */
 .action {
   display: flex;
+ 
   justify-content: space-between;
   align-items: center;
   padding: 60px 40px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #ccc;
   flex-wrap: wrap;
 }
 .action-left {
-  flex: 1;
+  flex:1;
   min-width: 250px;
   padding-right: 20px;
 }
@@ -87,9 +103,22 @@ header {
   font-size: 18px;
   margin-bottom: 20px;
 }
-.preview-btn:hover {
-  background-color: #e65c00;
+.preview-btn {
+  background-color: #4f46e5;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  transform: scale(1);
 }
+.preview-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
 .action-right {
   flex: 1;
   min-width: 250px;
@@ -102,77 +131,87 @@ header {
 }
 /* ✅ Productive Users Section */
 .productive-users {
-  background-color: #f2f2f2; /* light gray */
+  background-color: #efe6e6; /* light gray */
   color: #333;
   text-align: center;
   padding: 60px 20px;
+  margin: 20px;
+  
 }
 
 
-stats-container{
+.stats-container{
      display: flex;
   justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
+ 
 }
 .stat-box {
-  background-color: white;
   padding: 30px 40px;
-  border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   min-width: 200px;
   transition: transform 0.3s;
 }
 /* Feedback Section */
-.feedback {
+.feedback-section {
   text-align: center;
-  padding: 40px 20px;
-  background-color: #f9f9f9;
-}
-.stars {
-  margin-bottom: 15px;
-}
-.stars img {
-  width: 25px;
-  margin: 0 3px;
+  padding: 50px 20px;
+  background-color: #f5f5f5;
 }
 
-.feedback-title {
-  font-size: 28px;
-  font-weight: bold;
-  margin: 10px 0;
+.feedback-main-title {
+  font-size: 32px;
+  margin-bottom: 40px;
 }
-.feedback-subtitle {
-  font-size: 16px;
-  color: #777;
-  margin-bottom: 20px;
-}
-.reviewer {
+
+.feedback-cards {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 15px;
-  margin-top: 20px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
-.reviewer-img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-}
-.reviewer-info {
+
+.feedback-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
   text-align: left;
 }
 
-.reviewer-name {
-  font-size: 18px;
-  font-weight: 600;
+.stars img {
+  width: 20px;
+  margin-right: 3px;
 }
 
-.reviewer-date {
-  font-size: 14px;
-  color: gray;
+.feedback-text {
+  font-size: 15px;
+  margin: 15px 0;
+  color: #333;
 }
 
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reviewer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.reviewer h4 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.reviewer p {
+  font-size: 12px;
+  color: #888;
+  margin: 2px 0 0;
+}
 
 /* Contact Section */
 .signup-section{
@@ -211,21 +250,28 @@ stats-container{
 
 .contact-form input,
 .contact-form textarea {
-  padding: 12px;
+  padding: 12px 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 16px;
 }
-
-.contact-form input,
-.contact-form textarea {
-  padding: 12px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 16px;
+.submet-btn {
+  background-color: #4f46e5;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  transform: scale(1);
 }
+.submet-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+ 
 /* Footer section */
 .footer {
   background-color: #222;
@@ -235,6 +281,15 @@ stats-container{
 }
 
 .footer-title {
+ background-color: #4f46e5;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  transform: scale(1);
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -242,7 +297,7 @@ stats-container{
 .footer-subtitle {
   font-size: 16px;
   margin-bottom: 20px;
-  color: #ccc;
+  color: #ece9e9;
 }
 
 .footer-links {
