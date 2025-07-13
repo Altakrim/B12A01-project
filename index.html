@@ -6,112 +6,33 @@
     <title></title>
     <link rel="stylesheet" href="style.css">
     <style>
-        * {
-            font-family: Arial, Helvetica, sans-serif;
-            margin:0;
-            padding:0;
-            box-sizing: border-box;
-        }
-        header {
-            background-color: white;
-            height: 100%;
-            padding: 20px 40px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .banner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            }
-        .logo {
-            font-weight: bold;
-            font-size: 32px;
-            color :#4E47FF;
-        }
-        .signup-btn {
-            background-color: #4E47FF;
-            color :white;
-            padding:10px 20px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight:bold;
-            font-size: 25%;
-        }
+       
+       
+       
+       
+        
+        
 
-        .title {
-            text-align: center;
-            margin-top: 10%;
-
-        }
-        .title h1 {
-            font-size: 36px;
-            font-weight: 800%;
-            color :#111;
-        }
-        .stay-focused-btn {
-            margin-top: 20px;
-            display: inline-block;
-            background-color: #4E47FF;
-            color: white;
-            padding:12px 24px;
-            border-radius: 9px;
-            font-weight: bold;
-        }
-        .stats-section {
-  background-color: #e6e6ff; /* Light indigo background */
-  padding: 40px 20px;
-  border-radius: 16px;
-  margin: 40px auto;
-  max-width: 900px;
-  text-align: center;
-}
-
-.stats-section h2 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: #111;
-}
-
-.stats-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.stat-box h3 {
-  font-size: 32px;
-  color: #4f46e5; /* Indigo */
-  margin-bottom: 5px;
-}
-
-.stat-box p {
-  color: #666;
-  font-size: 14px;
-}
-
-
+       
+        
 
     </style> 
 </head>
 <body>
-    <header> 
-            <div class="banner">
+    <header>
+         <div class="navbar">
                  <div class="logo">LOGO</div>
                <button class="signup-btn">Sign Up</button>
-            </div>
+           
              
-            <div class="title">
-                <h2>Cool Dark UI Template for<br> Webflow Agencies!</h2>
-                <button class="stay-focused-btn"> Focused</button>
-            </div>
-                   
+                <div class="banner">
+                <h1>Cool Dark UI Template for<br> Webflow Agencies!</h2>
+                <button class="focus-btn"> Focused</button>
+        </div>
+                       
     </header>
     <main>
-        <section class="action">
+       <!---- <section class="action">
           
                 <h3>See It In Action</h3>
                 
@@ -135,8 +56,29 @@
                           </div>
             
         </section>
+        <section class="reviw-section">
+            <h2>What our users say</h2>
+            <div class="reviw-one">                 
+                <img src="/Assets/icon-star.png" alt="" class="">
+                <h4>Loved by Designers</h4>
+                <p>This template instantly leveled up our presence.” – Studio Vertex</p>
+                <p><img src="/Assets/avatar.png" alt="" class="" > <span>Reviewer name <br> Date</span></p>
+            </div>
+        </section>
 
-      
+      <section class="signup-section">
+        <h1>Let’s Get in Touch</h1>
+        <form action="" class="signup-form">
+            <label>Email</label>
+            <input type="email" placeholder="example@email.com" name="Email" id="email">
+            <label>Name</label>
+            <input type="name" placeholder="full name" name="Name" id="name">
+            <label>Message</label>
+            <textarea name="text" placeholder="write your message" id="text"></textarea>
+            <button class="submet">Get in Touch</button>
+        </form>
+      </section>
+      </section>
 
     </main>
 </body>
